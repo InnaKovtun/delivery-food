@@ -180,12 +180,12 @@ body{
 }
 
 .card-title-reg{
+    font-size: 21px;
     font-weight: 400;
     white-space: nowrap;
 }
 
 .card-tag{
-
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -423,6 +423,11 @@ body{
 
     .ingredients{
         text-overflow: ellipsis;
+        font-size: 16px;
+    }
+
+    .card{
+
     }
 
     .card-image{
@@ -433,6 +438,10 @@ body{
     .prom{
         background-position: center right -300px;
         background-size: 750px;
+    }
+
+    .card-title-reg{
+        font-size: 18px;
     }
 
     .card .rating{
@@ -531,19 +540,30 @@ body{
     }
 }
 
-@media (max-width: 578px){
+@media (max-width: 560px){
     .container {
         width: 90%;
     }
 
-    .header{
-        flex-wrap: wrap; 
+    .section-heading{
+        flex-wrap: wrap;
     }
+
     .input-address{
-        order: 4;
+        order: 1;
         margin-top: 10px;
         flex: 1;
     }
+
+    .buttons{
+       margin-left: 100px;
+    }
+
+    .input-search{
+        margin-left: 0px;
+        width: 100%;
+    }
+
     .card-image{
         width: 100%;
         height: 100%;
@@ -563,6 +583,10 @@ body{
 
     .card {
         flex-basis: 100%;
+    }
+
+    .card-price-bold{
+        margin-left: 200px;
     }
 
     .card-image{
@@ -591,7 +615,7 @@ body{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 496px){
     .button-text{
         display: none;
     }
@@ -613,6 +637,10 @@ body{
         order: 4;
         margin-top: 10px;
         flex: 1;
+    }
+
+    .card-price-bold{
+        margin-left: 70px;
     }
 
     .prom{
@@ -637,5 +665,11 @@ body{
 
     .footer-link:not(:last-child){
         margin-right: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .card-price-bold{
+        margin-left: 25px;
     }
 }
